@@ -60,9 +60,6 @@ import com.mesibo.mediapicker.MediaPicker;
 import com.mesibo.messaging.MesiboMessageListFragment;
 import com.mesibo.messaging.MesiboMessagingFragment;
 
-
-import org.mesibo.messenger.Contacts.ContactsFragment;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +67,6 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
 
 
     MesiboUserListFragment mUserListFragment;
-    ContactsFragment mContactsFragment;
     MesiboMyCallLogsFragment mesiboMyCallLogsFragment;
     ViewPagerAdapter mAdapter;
     RelativeLayout mReturnToCallFragment;
@@ -109,8 +105,6 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
     private void setupViewPager(ViewPager viewPager) {
         mAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        mContactsFragment = new ContactsFragment();
-
         Bundle bundle = new Bundle();
         String myMessage = "NewContactSelector";
         bundle.putString("message", myMessage );
@@ -122,15 +116,8 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
         mUserListFragment.setArguments(bundle);
 
         mesiboMyCallLogsFragment = new MesiboMyCallLogsFragment();
-
         mAdapter.addFragment(mUserListFragment, "Chats");
         mAdapter.addFragment(mesiboMyCallLogsFragment,"Call Logs");
-        mAdapter.addFragment(new ContactsFragment(),"Contacts");
-
-
-
-
-
 
         viewPager.setAdapter(mAdapter);
 
@@ -155,19 +142,6 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
     @Override
     public void onImageEdit(int i, String s, String filePath, Bitmap bitmap, int status1) {
 
-        Mesibo.MessageParams messageParams = new Mesibo.MessageParams();
-
-//
-//            String peer = "917989817981";
-//            messageParams.setPeer(peer);
-//
-//
-//
-//        Mesibo.sendMessage(messageParams, Mesibo.random(), "Image Upload");
-
-
-
-
     }
 
     @Override
@@ -188,6 +162,7 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
             i.putExtra("groupid", l);
             startActivity(i);
 
+        //return false to load default
         return true;
     }
 
@@ -277,10 +252,6 @@ public class MesiboMainActivity extends AppCompatActivity implements MesiboMessa
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
         }
-
-
-
-
 
         @Override
         public CharSequence getPageTitle(int position) {
