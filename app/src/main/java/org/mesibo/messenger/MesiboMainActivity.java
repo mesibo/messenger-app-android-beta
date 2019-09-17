@@ -57,13 +57,13 @@ import android.widget.RelativeLayout;
 import com.mesibo.api.Mesibo;
 import com.mesibo.calls.MesiboCall;
 import com.mesibo.mediapicker.MediaPicker;
-import com.mesibo.messaging.MesiboMessageListFragment;
+import com.mesibo.messaging.MesiboUserListFragment;
 import com.mesibo.messaging.MesiboMessagingFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MesiboMainActivity extends AppCompatActivity implements MesiboMessageListFragment.FragmentListener, MesiboMessagingFragment.FragmentListener, MediaPicker.ImageEditorListener, Mesibo.CallListener {
+public class MesiboMainActivity extends AppCompatActivity implements MesiboUserListFragment.FragmentListener, MesiboMessagingFragment.FragmentListener, MediaPicker.ImageEditorListener, Mesibo.CallListener {
 
 
     MesiboUserListFragment mUserListFragment;

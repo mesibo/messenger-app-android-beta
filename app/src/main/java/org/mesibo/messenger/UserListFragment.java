@@ -43,14 +43,14 @@ package org.mesibo.messenger;
 
 import android.util.Log;
 
-import com.mesibo.messaging.MesiboMessageListFragment;
+import com.mesibo.messaging.MesiboUserListFragment;
 
 
-public class MesiboUserListFragment extends MesiboMessageListFragment {
+public class UserListFragment extends MesiboUserListFragment {
 
-    private static final String TAG = "MesiboUserListFragment";
+    private static final String TAG = "UserListFragment";
 
-    public MesiboUserListFragment() {
+    public UserListFragment() {
 
     }
 

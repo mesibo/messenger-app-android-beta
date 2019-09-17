@@ -88,7 +88,7 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
 
-public class MessagingUIFragmentNew extends MesiboMessagingFragment implements MesiboRecycleViewHolder.Listener, Mesibo.FileTransferListener/*, MesiboUserListFragment.FragmentListener*/ {
+public class MessagingUIFragmentNew extends MesiboMessagingFragment implements MesiboRecycleViewHolder.Listener, Mesibo.FileTransferListener {
 
 
     public static final int TYPE_SEND_CONATCT = 113;
