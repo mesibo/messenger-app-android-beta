@@ -183,7 +183,7 @@ public class UIManager {
     }
 
     public static void launchLogin(Activity context, ILoginInterface loginInterface){
-        MesiboUiHelper.launchAccountKit(context, true, loginInterface, null);
+        MesiboUiHelper.launchLogin(context, true, 2, loginInterface);
     }
 
     public static void showOnCallProgressGreenBar(View view){

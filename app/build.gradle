@@ -63,8 +63,6 @@ dependencies {
     implementation "com.android.support:design:${project.Mesibo_supportLibVersion}"
     implementation "com.android.support:preference-v7:${project.Mesibo_supportLibVersion}"
 
-    implementation 'com.facebook.android:account-kit-sdk:5.+'
-
     implementation "com.google.android.gms:play-services-maps:${project.Mesibo_playServiceVersion}"
     implementation "com.google.android.gms:play-services-location:${project.Mesibo_playServiceVersion}"
     implementation "com.google.android.gms:play-services-places:${project.Mesibo_playServiceVersion}"
