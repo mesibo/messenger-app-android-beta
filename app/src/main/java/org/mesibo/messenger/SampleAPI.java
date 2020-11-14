@@ -74,6 +74,7 @@ public class SampleAPI  {
     private static boolean mResetSyncedContacts = false;
     private static String mAkClientToken = null;
     private static String mAkAppId = null;
+    private static MesiboListeners mMesiboListeners = null;
 
     public final static String KEY_SYNCEDCONTACTS = "syncedContacts";
     public final static String KEY_SYNCEDDEVICECONTACTSTIME = "syncedPhoneContactTs";
@@ -667,8 +668,9 @@ public class SampleAPI  {
         MediaPicker.setPath(path);
 
         // add lister
-        Mesibo.addListener(MesiboListeners.getInstance());
-        MesiboCall.getInstance().setListener(MesiboListeners.getInstance());
+        mMesiboListeners = MesiboListeners.getInstance();
+        Mesibo.addListener(mMesiboListeners);
+        MesiboCall.getInstance().setListener(mMesiboListeners);
 
         // add file transfer handler
         MesiboFileTransferHelper fileTransferHelper = new MesiboFileTransferHelper();

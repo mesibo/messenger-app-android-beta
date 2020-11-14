@@ -445,6 +445,7 @@ public class MesiboListeners implements Mesibo.ConnectionListener, ILoginInterfa
 
     @Override
     public MesiboAudioCallFragment MesiboCall_getAudioCallFragment(Mesibo.UserProfile userProfile) {
+        //return new AudioOutgoingFragment();
         return null;
     }
 
