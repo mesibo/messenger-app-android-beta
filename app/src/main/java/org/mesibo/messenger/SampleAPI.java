@@ -250,7 +250,7 @@ public class SampleAPI  {
     }
 
     private static Gson mGson = new Gson();
-    private static String mApiUrl = "https://app.mesibo.com/api.php";
+    private static String mApiUrl = "http://app.mesibo.com/messenger/api.php";
     private static long mContactTs = 0;
 
     private static boolean invokeApi(final Context context, final Bundle postBunlde, String filePath, String formFieldName, boolean uiThread) {
