@@ -30,7 +30,8 @@ To download, open a terminal and issue following commands:
 
     $ mkdir Messenger
     $ cd Messenger
-    $ git clone https://github.com/mesibo/messenger-app-android.git
+    $ git clone https://github.com/mesibo/messenger-app-android-beta.git
+
 
 ### Download the code as a zip file
 You can also download the complete Android Messenger source code as a [zip file](https://github.com/mesibo/messenger-app-android/archive/master.zip). Although simple, the downsize of this approach is that you will have to download the complete source code everytime it is updated on the repository. 
